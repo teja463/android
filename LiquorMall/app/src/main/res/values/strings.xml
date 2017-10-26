@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LiquorMall</string>
+    <string name="business_name">Pick &amp; Pay Liquour Mall</string>
+    <string name="timing">Shop times</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="phone">311-813-8989</string>
+    <string name="email">abc@xyz.com</string>
+    <string name="timings">Moring 10 to Midnight 12</string>
+</resources>

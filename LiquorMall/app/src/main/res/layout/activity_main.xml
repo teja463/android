@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.bponnuru.liquormall.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/locationID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Location"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/inputID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Paris"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/locationID"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/dateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dateTxt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/dateTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="September 12 1989"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/inputID"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputID"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum, sem sed iaculis convallis, quam nulla luctus urna, sed tincidunt augue odio vitae arcu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum, sem sed iaculis convallis, quam nulla luctus urna, sed tincidunt augue odio vitae arcu. Donec quis augue in diam commodo consequat. Aenean interdum tincidunt ultrices. Sed dui purus, porta eu risus ut, porttitor venenatis nibh. Sed condimentum malesuada leo, sit amet lacinia neque scelerisque at. Nam congue libero non dapibus aliquet. Aliquam nec porttitor ante."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp" />
+
+</android.support.constraint.ConstraintLayout>
