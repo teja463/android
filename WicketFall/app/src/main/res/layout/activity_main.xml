@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bponnuru.wicketfall.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Team A Score"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TableLayout
+                android:id="@+id/a_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/a_six_btn"
+                        android:onClick="addSixForTeamA"
+                        android:text="6" />
+
+                    <Button
+                        android:onClick="addFourForTeamA"
+                        android:text="4" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:onClick="addThreeForTeamA"
+                        android:text="3" />
+
+                    <Button
+                        android:onClick="addTwoForTeamA"
+                        android:text="2" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:onClick="addOneForTeamA"
+                        android:text="1" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/team_a_wicketfall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="takeWicketForTeamA"
+                android:padding="4dp"
+                android:text="Wicket" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearContentForTeamA"
+                android:padding="4dp"
+                android:text="Reset" />
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#616161"
+            android:layout_marginTop="16dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Team B Score"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <Button
+                        android:onClick="addSixForTeamB"
+                        android:text="6" />
+
+                    <Button
+                        android:onClick="addFourForTeamB"
+                        android:text="4" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:onClick="addThreeForTeamB"
+                        android:text="3" />
+
+                    <Button
+                        android:onClick="addTwoForTeamB"
+                        android:text="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:onClick="addOneForTeamB"
+                        android:text="1" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/team_b_wicketfall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="takeWicketForTeamB"
+                android:padding="4dp"
+                android:text="Wicket" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearContentForTeamB"
+                android:padding="4dp"
+                android:text="Reset" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
